@@ -1,0 +1,38 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Tehtävä_2
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            //Muuttujan esittely
+            int luku;
+            //Luvun kysely eli luku
+            Console.Write("Anna luku 1 ja 10 väliltä? " );
+            luku = int.Parse(Console.ReadLine());
+            Console.WriteLine();
+
+            //Console.WriteLine("Tervetuloa " + etunimi + " ohjelmoimaan"); // tulostaa näytölle
+            //etunimi = Console.ReadLine(); // lukee näytöltä tiedon merkkijonoon (ReadLine)
+
+            //laskenta kertolasku; jakolasku; prosentti;
+            int tulo1 = 1 * luku; int jako1 = 1 / luku; int jakojaannos1 = 1 % luku;
+            int tulo2 = 2 * luku; int jako2 = 2 / luku; int jakojaannos2 = 2 % luku;
+            int tulo3 = 3 * luku; int jako3 = 3 / luku; int jakojaannos3 = 3 % luku;
+            int tulo4 = 4 * luku; int jako4 = 4 / luku; int jakojaannos4 = 4 % luku;
+            int tulo5 = 5 * luku; int jako5 = 5 / luku; int jakojaannos5 = 5 % luku;
+
+            //Laskun tulokset
+            Console.WriteLine("1 * " + luku + " = " + tulo1 + "    1 / " + luku + " = " + jako1 + "   1 % " + luku + " = " + jakojaannos1);
+            Console.WriteLine("2 * " + luku + " = " + tulo2 + "   2 / " + luku + " = " + jako2 + "   2 % " + luku + " = " + jakojaannos2);
+            Console.WriteLine("3 * " + luku + " = " + tulo3 + "   3 / " + luku + " = " + jako3 + "   3 % " + luku + " = " + jakojaannos3);
+            Console.WriteLine("4 * " + luku + " = " + tulo4 + "   4 / " + luku + " = " + jako4 + "   4 % " + luku + " = " + jakojaannos4);
+            Console.WriteLine("5 * " + luku + " = " + tulo5 + "   5 / " + luku + " = " + jako5 + "   5 % " + luku + " = " + jakojaannos5);
+        }
+    }
+}
